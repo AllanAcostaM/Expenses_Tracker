@@ -5,6 +5,7 @@ import { RouterOutlet } from '@angular/router';
 
 // Components
 import { BalanceComponent } from './components/balance/balance.component';
+import { Balance } from './models/balance.model';
 
 @Component({
   selector: 'app-root',
@@ -14,5 +15,9 @@ import { BalanceComponent } from './components/balance/balance.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-
+  balance: Balance = {
+    amount: 55_000,
+    income: 100_000,
+    expenses: 45_000,
+  };
 }
