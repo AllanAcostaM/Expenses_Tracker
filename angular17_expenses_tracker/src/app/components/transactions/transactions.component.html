@@ -1,0 +1,7 @@
+<p>Transactions</p>
+
+<ul>
+  @for(transaction of transactions; track transaction.id) {
+  <li>{{ transaction.category }} - {{ transaction.amount | currency }}</li>
+  }
+</ul>
