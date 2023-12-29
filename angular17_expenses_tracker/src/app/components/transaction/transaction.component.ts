@@ -10,5 +10,5 @@ import { Transaction } from '../../models/transaction.model';
   styleUrl: './transaction.component.scss'
 })
 export class TransactionComponent {
-  @Input() transaction!: Transaction
+  @Input() transaction!: Transaction;
 }

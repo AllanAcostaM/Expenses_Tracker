@@ -1,4 +1,7 @@
-<p>Transactions</p>
-@for(transaction of transactions; track transaction.id) {
-<app-transaction [transaction]="transaction" />
-}
+<div class="transactions">
+  @for(transaction of transactions; track transaction.id) {
+  <app-transaction [transaction]="transaction" />
+  }@empty {
+  <h3>No transactions!</h3>
+  }
+</div>

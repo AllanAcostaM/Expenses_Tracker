@@ -1,0 +1,31 @@
+@use "../../../styles.scss" as s;
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: s.$font-family;
+  padding: 1.125rem 1.125rem;
+  border-radius: s.$main-border-radius;
+  background-color: s.$white;
+  box-shadow: s.$main-shadow;
+
+  &__title {
+    h5 {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: s.$gray-dark;
+    }
+  }
+  &__amount {
+    color: s.$gray-dark;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: right;
+  }
+  &__date {
+    color: #535050;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}

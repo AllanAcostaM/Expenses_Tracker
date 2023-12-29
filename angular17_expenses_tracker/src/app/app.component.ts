@@ -30,28 +30,28 @@ export class AppComponent {
       type: 'expense',
       amount: 45,
       category: 'food',
-      date: new Date(2023, 12, 24),
+      date: new Date(2023, 11, 24),
     },
     {
       id: '2',
       type: 'expense',
       amount: 280,
       category: 'shopping',
-      date: new Date(2023, 12, 20),
+      date: new Date(2023, 11, 20),
     },
     {
       id: '3',
       type: 'expense',
       amount: 60,
       category: 'entertainment',
-      date: new Date(2023, 12, 15),
+      date: new Date(2023, 11, 15),
     },
     {
       id: '4',
       type: 'income',
       amount: 500,
       category: 'payrrol',
-      date: new Date(2023, 12, 2),
+      date: new Date(2023, 11, 2),
     },
   ]
 }
