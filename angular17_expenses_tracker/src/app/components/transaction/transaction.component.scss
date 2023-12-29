@@ -11,6 +11,8 @@
   box-shadow: s.$main-shadow;
 
   &__title {
+    display: flex;
+    gap: 0.5rem;
     h5 {
       font-size: 1.0625rem;
       font-weight: 600;
@@ -27,5 +29,19 @@
     color: #535050;
     font-size: 0.8rem;
     font-weight: 400;
+  }
+  &__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    text-align: center;
+    &-income {
+      color: s.$income-icon-color;
+      background-color: s.$income-icon-bg-color;
+    }
+    &-expense {
+      color: s.$expense-icon-color;
+      background-color: s.$expense-icon-bg-color;
+    }
   }
 }
