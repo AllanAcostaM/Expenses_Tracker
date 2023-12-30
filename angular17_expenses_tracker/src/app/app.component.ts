@@ -50,7 +50,7 @@ export class AppComponent {
       id: '4',
       type: 'income',
       amount: 500,
-      category: 'payrrol',
+      category: 'payroll',
       date: new Date(2023, 11, 2),
     },
   ]
