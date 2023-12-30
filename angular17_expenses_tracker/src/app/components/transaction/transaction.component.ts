@@ -11,4 +11,9 @@ import { Transaction } from '../../models/transaction.model';
 })
 export class TransactionComponent {
   @Input() transaction!: Transaction;
+
+  // Objeto de estilos dinamicos
+  dateStyles: Record<string, string> = {
+    "border-bottom": '1px dashed gray',
+  }
 }
