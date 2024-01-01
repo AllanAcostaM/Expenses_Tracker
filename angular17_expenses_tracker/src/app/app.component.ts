@@ -18,6 +18,7 @@ import { TransactionsComponent } from './components/transactions/transactions.co
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
 export class AppComponent {
   balance: Balance = {
     amount: 55_000,
@@ -54,4 +55,11 @@ export class AppComponent {
       date: new Date(2023, 11, 2),
     },
   ]
+
+  removeTransaction(id: string) {
+    // Elimina la transaccion del arreglo
+    this.transactions = this.transactions.filter(
+      transaction => transaction.id !== id
+    );
+  }
 }
