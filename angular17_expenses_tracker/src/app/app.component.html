@@ -1,9 +1,15 @@
 <div class="container">
-  <app-balance [balance]="balance" />
-  <app-transactions
-    [transactions]="transactions"
-    (removeTransactionEvent)="removeTransaction($event)"
-  />
+  <h1>Mi aplicacion</h1>
+  <ul>
+    <li><a routerLink="">home</a></li>
+    <li><a routerLink="about">about</a></li>
+    <li><a routerLink="add">add transaction</a></li>
+  </ul>
+  <router-outlet></router-outlet>
 </div>
 
-<!-- <router-outlet></router-outlet> -->
+<!-- <app-balance [balance]="balance" />
+<app-transactions
+  [transactions]="transactions"
+  (removeTransactionEvent)="removeTransaction($event)"
+/> -->

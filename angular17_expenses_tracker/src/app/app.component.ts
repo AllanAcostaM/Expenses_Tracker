@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 // Models
@@ -14,7 +14,7 @@ import { TransactionsComponent } from './components/transactions/transactions.co
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, BalanceComponent, TransactionsComponent],
+  imports: [CommonModule, RouterOutlet, BalanceComponent, TransactionsComponent, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
