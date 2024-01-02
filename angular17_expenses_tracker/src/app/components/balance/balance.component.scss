@@ -1,21 +1,7 @@
 @use "../../../styles.scss" as s;
 
 .balance {
-  background-image: linear-gradient(
-    to right top,
-    #39a9e4,
-    #46a2ee,
-    #629af4,
-    #838ef5,
-    #a580ee,
-    #c377e0,
-    #db6ecf,
-    #ee66bb,
-    #fa6ca5,
-    #ff7792,
-    #fe8483,
-    #f8937a
-  );
+  background-image: s.$gradient-bg;
   box-shadow: s.$main-shadow;
   border-radius: s.$main-border-radius;
   padding: 1.5625rem;

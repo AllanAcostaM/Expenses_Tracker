@@ -13,7 +13,7 @@ $font-family: "Montserrat", sans-serif;
 // Colors
 $white: #fff;
 $gray-dark: #444343;
-$gray-alternative: #363434;
+$gray-alternative: #646363;
 $error: #f960cd;
 $error-light: mix($error, #fff, 20%);
 $remove-color: #cc0e96;
@@ -26,7 +26,24 @@ $expense-icon-bg-color: #ffdcfa;
 $amount-expense-color: $expense-icon-color;
 $amount-income-color: $income-icon-color;
 
+$gradient-bg: linear-gradient(
+  to right top,
+  #39a9e4,
+  #46a2ee,
+  #629af4,
+  #838ef5,
+  #a580ee,
+  #c377e0,
+  #db6ecf,
+  #ee66bb,
+  #fa6ca5,
+  #ff7792,
+  #fe8483,
+  #f8937a
+);
+
 $link-color: #2480b1;
+
 // bg
 $main-bg-color: #cfcdcd;
 
