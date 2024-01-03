@@ -25,15 +25,27 @@ export class AddTransactionComponent implements OnInit {
       amount: new FormControl(0, [
         Validators.required,
         Validators.pattern('^[0-9]+$'),
-
-
       ]),
       type: new FormControl('expense', Validators.required),
       category: new FormControl('', Validators.required),
-      date: new FormControl('', Validators.required),
+      date: new FormControl('2024-01-01', Validators.required),
     });
   }
   onSubmit() {
+    // Verifica si el formulario es valido
+    if (this.addTransactionForm.valid) {
+      console.log("Formulario valido");
+    } else {
+      console.error("No validos");
+    }
+
+    // const data = {
+    //   ...this.addTransactionForm.value,
+    //   amount: parseInt(this.addTransactionForm.controls
+    //   ["amount"].value),
+    // };
+
+
     console.log(this.addTransactionForm);
     console.log(this.addTransactionForm.value);
 

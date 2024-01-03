@@ -6,13 +6,6 @@
     [formGroup]="addTransactionForm"
     (ngSubmit)="onSubmit()"
   >
-    <input
-      type="text"
-      class="add-transaction__amount"
-      autofocus
-      formControlName="amount"
-    />
-
     <!-- prettier-ignore -->
     @if (addTransactionForm.get("amount")?.invalid && addTransactionForm.get("amount")?.touched) {
 
@@ -24,6 +17,12 @@
     @if(addTransactionForm.get("amount")?.errors?.["pattern"]) {
     <div class="add-transaction__error-message">Valid number requiered</div>
     }}
+    <input
+      type="number"
+      class="add-transaction__amount"
+      autofocus
+      formControlName="amount"
+    />
 
     <div class="add-transaction__type">
       <input
@@ -44,12 +43,19 @@
       <label for="income">Income</label>
     </div>
     <select class="add-transaction__category" formControlName="category">
-      <option value="">select yout category</option>
+      <option value="">Select the category</option>
       <option value="food">Food</option>
       <option value="shopping">Shopping</option>
       <option value="entertaiment">Entertaiment</option>
       <option value="payroll">Payroll</option>
     </select>
+    <!-- prettier-ignore -->
+    @if (addTransactionForm.get("category")?.invalid && addTransactionForm.get("category")?.touched) {
+
+    <!-- prettier-ignore -->
+    @if (addTransactionForm.get("category")?.errors?.["required"] ) {
+    <div class="add-transaction__error-message">Select your category</div>
+    }}
     <input type="date" class="add-transaction__date" formControlName="date" />
     <button type="submit">Save</button>
   </form>
