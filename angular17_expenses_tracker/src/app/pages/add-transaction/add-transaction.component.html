@@ -12,6 +12,19 @@
       autofocus
       formControlName="amount"
     />
+
+    <!-- prettier-ignore -->
+    @if (addTransactionForm.get("amount")?.invalid && addTransactionForm.get("amount")?.touched) {
+
+    <!-- prettier-ignore -->
+    @if (addTransactionForm.get("amount")?.errors?.["required"] ) {
+    <div class="add-transaction__error-message">Amount Requiered</div>
+    }
+    <!-- prettier-ignore -->
+    @if(addTransactionForm.get("amount")?.errors?.["pattern"]) {
+    <div class="add-transaction__error-message">Valid number requiered</div>
+    }}
+
     <div class="add-transaction__type">
       <input
         type="radio"
