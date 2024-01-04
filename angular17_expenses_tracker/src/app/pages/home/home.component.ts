@@ -23,6 +23,11 @@ import { TransactionsService } from '../../services/transactions.service';
 })
 export class HomeComponent implements OnInit {
   transactions!: Transaction[]
+  balance: Balance = {
+    amount: 55_000,
+    income: 100_000,
+    expenses: 45_000,
+  };
 
   // Provee el servicio al componente usando Denpendency Injection
   constructor(private transactionService: TransactionsService) { }
@@ -32,13 +37,6 @@ export class HomeComponent implements OnInit {
       this.transactions = response
     })
   }
-
-  balance: Balance = {
-    amount: 55_000,
-    income: 100_000,
-    expenses: 45_000,
-  };
-
 
   removeTransaction(id: string) {
     // Elimina la transaccion del arreglo
