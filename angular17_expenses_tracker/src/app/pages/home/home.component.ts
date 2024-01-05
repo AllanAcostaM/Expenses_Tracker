@@ -39,9 +39,17 @@ export class HomeComponent implements OnInit {
   }
 
   removeTransaction(id: string) {
-    // Elimina la transaccion del arreglo
-    this.transactions = this.transactions.filter(
-      transaction => transaction.id !== id
-    );
+
+    // Elimina la trnasaccion del backend
+    this.transactionService.remove(id).subscribe((response: Transaction) => {
+      console.log(response);
+      // Elimina la transaccion del arreglo
+      this.transactions = this.transactions.filter(
+        transaction => transaction.id !== id
+      );
+    })
+
+
+
   }
 }
