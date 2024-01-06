@@ -10,8 +10,8 @@ describe('BalanceComponent', () => {
     await TestBed.configureTestingModule({
       imports: [BalanceComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(BalanceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -20,4 +20,11 @@ describe('BalanceComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('dos mas dos es igual a cuatro', () => {
+    let suma = 2 + 2;
+    // Ejecucion de prueba
+    expect(suma).toBe(4);
+  })
+
+
 });

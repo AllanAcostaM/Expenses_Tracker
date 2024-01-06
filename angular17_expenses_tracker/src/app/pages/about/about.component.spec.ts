@@ -7,13 +7,17 @@ describe('AboutComponent', () => {
   let fixture: ComponentFixture<AboutComponent>;
 
   beforeEach(async () => {
+    // Configura el modulo de pruebas
     await TestBed.configureTestingModule({
       imports: [AboutComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
+    // Crea el componente
     fixture = TestBed.createComponent(AboutComponent);
+    // Obtiene el componente
     component = fixture.componentInstance;
+    // Detecta cambios en el componente
     fixture.detectChanges();
   });
 
