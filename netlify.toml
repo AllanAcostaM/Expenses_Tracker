@@ -1,6 +1,0 @@
-[build]
-  publish = "dist/angular17_expenses_tracker"
-  functions = "netlify/functions"
-
-[dev]
-  command = "./node_modules/.bin/ng build --configuration=production"
