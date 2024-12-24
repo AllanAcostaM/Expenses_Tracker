@@ -1,0 +1,6 @@
+[build]
+  publish = "dist/angular17_expenses_tracker"
+  functions = "netlify/functions"
+
+[dev]
+  command = "ng serve"
