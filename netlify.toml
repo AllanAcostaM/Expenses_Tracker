@@ -3,4 +3,4 @@
   functions = "netlify/functions"
 
 [dev]
-  command = "ng serve"
+  command = "./node_modules/.bin/ng build --configuration=production"
